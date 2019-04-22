@@ -1,0 +1,12 @@
+<?php
+
+
+namespace DefaultNamespace;
+
+use Chibi\Model\Katana as Model;
+
+
+class StubModel extends Model
+{
+    static $table = 'table_name';
+}
