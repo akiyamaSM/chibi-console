@@ -1,0 +1,13 @@
+<?php
+
+
+namespace DefaultNamespace;
+
+use Chibi\Controller\Controller;
+use Chibi\Request;
+use Chibi\Response;
+
+class StubController extends Controller
+{
+
+}

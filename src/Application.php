@@ -2,13 +2,15 @@
 
 namespace Chibi\Console;
 
+use Chibi\Console\Commands\CreateController;
 use Chibi\Console\Commands\RunServer;
 use Symfony\Component\Console\Application as BaseApplication;
 
 class Application extends BaseApplication
 {
     protected $commands = [
-      RunServer::class
+      RunServer::class,
+      CreateController::class
     ];
 
     /**

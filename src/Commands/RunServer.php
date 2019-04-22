@@ -8,7 +8,6 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Process\Process;
 
 class RunServer extends Command
 {
@@ -18,8 +17,8 @@ class RunServer extends Command
      */
     public function configure()
     {
-        $this->setName('run')
-            ->addArgument('port', InputArgument::OPTIONAL, 'The port that will be exposed', 80)
+        $this->setName('boot')
+            ->addArgument('port', InputArgument::OPTIONAL, 'The port that will be exposed', 8000)
             ->setDescription('runs the Webserver');
     }
 
