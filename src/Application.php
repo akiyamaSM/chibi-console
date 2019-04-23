@@ -4,6 +4,7 @@ namespace Chibi\Console;
 
 use Chibi\Console\Commands\CreateController;
 use Chibi\Console\Commands\CreateModel;
+use Chibi\Console\Commands\RoutesList;
 use Chibi\Console\Commands\RunServer;
 use Symfony\Component\Console\Application as BaseApplication;
 
@@ -12,7 +13,8 @@ class Application extends BaseApplication
     protected $commands = [
         RunServer::class,
         CreateController::class,
-        CreateModel::class
+        CreateModel::class,
+        RoutesList::class
     ];
 
     /**
